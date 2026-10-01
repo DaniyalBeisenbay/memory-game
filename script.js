@@ -47,6 +47,11 @@ const cardImages = [
   './assets/scarlet-witch.png',
 ];
 
+cardImages.forEach((imageSrc) => {
+  const image = new Image();
+  image.src = imageSrc;
+});
+
 const cards = [...cardImages, ...cardImages];
 
 for (let i = cards.length - 1; i > 0; i--) {
